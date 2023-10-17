@@ -7,7 +7,7 @@ Simple image upscale algorythm on python
 <img alt="Python" src="logo%2Fpython.png" width="200"/>
 <img alt="FastApi" src="logo%2Ffastapi.png" width="200"/>
 <img alt="Pillow" src="logo%2Fpillow.png" width="200"/>
-<img alt="OpenCV" src="logo%2Fopencv.png)" width="200"/>
+<img alt="OpenCV" src="logo%2Fopencv.png" width="200"/>
 <img alt="Redis" src="logo%2Fredis.png" width="200"/>
 
 
