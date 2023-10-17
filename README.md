@@ -35,19 +35,14 @@ _Instruction_
    ```sh
    sudo systemctl start redis.service
    ```
-5. Install postgresql from [official site](https://www.postgresql.org) or with package manager on your os and up service
-   * on linux with systemctl
-   ```sh
-   sudo systemctl start postgresql
-   ```
-7. Install requirements
+5. Install requirements
    ```sh
    cp .env.example ./app/.env
    cd app
    pip install -U pip
    pip install -r requirements.txt
    ```
-8. Already run
+6. Already run
    ```sh
    python main.py
    celery -A worker.celery worker --loglevel=info
