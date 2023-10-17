@@ -1,0 +1,57 @@
+version: '3.7'
+
+services:
+  core:
+    restart: always
+    build:
+      context: app/
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/app:rw
+    command:
+      python main.py
+    depends_on:
+      - postgres-server
+      - redis
+  postgres-server:
+    image: postgres:12
+    restart: always
+    volumes:
+      - ./postgres_data:/var/lib/postgresql
+    ports:
+      - "54321:5432"
+    environment:
+      POSTGRES_DB: upscale_db
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+  worker:
+    build:
+      context: app/
+      dockerfile: Dockerfile
+    command: celery -A src.core.tasks.celery worker --loglevel=info
+    volumes:
+      - ./app:/app:rw
+    depends_on:
+      - core
+      - redis
+  redis:
+    image: redis:7
+    hostname: redis
+    restart: always
+    ports:
+      - "63791:6379"
+    expose:
+      - 6379
+  dashboard:
+    build:
+      context: app/
+      dockerfile: Dockerfile
+    command: celery --broker=redis://redis:6379/0 flower --port=5555
+    ports:
+      - "55551:5555"
+    depends_on:
+      - core
+      - redis
+      - worker
