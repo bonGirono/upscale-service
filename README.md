@@ -4,8 +4,8 @@ Simple image upscale algorythm on python
 
 ### Built With
 
-* <img alt="Python" src="logo%2Fpython.png" width="200"/>
-* <img alt="FastApi" src="logo%2Ffastapi.png" width="200"/>
+<img alt="Python" src="logo%2Fpython.png" width="200"/>
+<img alt="FastApi" src="logo%2Ffastapi.png" width="200"/>
 
 
 ## Installation
