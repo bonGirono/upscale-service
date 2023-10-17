@@ -13,7 +13,7 @@ Simple image upscale algorythm on python
 
 
 ## Requirements
-Install **ffmpeg, libsm6, libxext6** on your system
+Install **ffmpeg, libsm6, libxext6** on your system **OR** use docker-compose
 
 ## Installation
 
