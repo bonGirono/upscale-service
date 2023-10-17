@@ -9,6 +9,7 @@ Simple image upscale algorythm on python
 <img alt="Pillow" src="logo%2Fpillow.png" width="200"/>
 <img alt="OpenCV" src="logo%2Fopencv.png" width="200"/>
 <img alt="Redis" src="logo%2Fredis.png" width="200"/>
+<img alt="Celery" src="logo%2Fcelery.png" width="200"/>
 
 
 ## Requirements
@@ -63,7 +64,7 @@ _Instruction_
 ## Results
 * Original 1000 x 600
    ![input.png](demo%2Finput.png)
-* Up scale 2x
+* Up scale 2x 2000 x 1200
   ![output2x.png](demo%2Foutput2x.png)
-* Up scale 8x
+* Up scale 8x 8000 x 4800
   ![output8x.png](demo%2Foutput8x.png)
