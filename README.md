@@ -4,8 +4,8 @@ Simple image upscale algorythm on python
 
 ### Built With
 
-* [![Python][/logo/python.png]][https://www.python.org]
-* [![FastApi][/logo/fastapi]][https://fastapi.tiangolo.com]
+* ![Python](logo%2Ffastapi.png)
+* ![FastApi](logo%2Ffastapi.png)
 
 
 ## Installation
