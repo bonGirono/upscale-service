@@ -13,19 +13,7 @@ services:
     command:
       python main.py
     depends_on:
-      - postgres-server
       - redis
-  postgres-server:
-    image: postgres:12
-    restart: always
-    volumes:
-      - ./postgres_data:/var/lib/postgresql
-    ports:
-      - "54321:5432"
-    environment:
-      POSTGRES_DB: upscale_db
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: password
   worker:
     build:
       context: app/

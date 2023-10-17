@@ -6,8 +6,8 @@ Simple image upscale algorythm on python
 
 <img alt="Python" src="logo%2Fpython.png" width="200"/>
 <img alt="FastApi" src="logo%2Ffastapi.png" width="200"/>
-<img alt="Tortoise ORM" src="logo%2Ftortoise.png" width="200"/>
-<img alt="PostgreSQL" src="logo%2Fpostgresql.png" width="200"/>
+<img alt="Pillow" src="logo%2Fpillow.png" width="200"/>
+<img alt="OpenCV" src="logo%2Fopencv.png)" width="200"/>
 <img alt="Redis" src="logo%2Fredis.png" width="200"/>
 
 
@@ -54,8 +54,16 @@ _Instruction_
    ```
 
 
-<!-- ROADMAP -->
 ## Roadmap
 
 - [X] Endpoint for upload image or video
 - [x] Upscale image
+
+
+## Results
+* Original 1000 x 600
+   ![input.png](demo%2Finput.png)
+* Up scale 2x
+  ![output2x.png](demo%2Foutput2x.png)
+* Up scale 8x
+  ![output8x.png](demo%2Foutput8x.png)

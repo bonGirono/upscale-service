@@ -20,6 +20,7 @@ class UpscaleView:
                 await f.write(content)
             is_video = True if content_type == "video/mp4" else False
             upscale2x.delay(file_path, is_video)
+            file.file.seek(0)
 
         except Exception as _:
             raise HTTPException(status_code=400, detail=f"File upload error")

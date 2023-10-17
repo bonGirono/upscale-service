@@ -98,7 +98,7 @@ class UpScale:
 @celery.task(name="upscale2x")
 def upscale2x(file_path: str, is_video: bool = False) -> bool:
     try:
-        upscale= UpScale(file_path)
+        upscale = UpScale(file_path)
         if is_video:
             upscale.video()
         else:
